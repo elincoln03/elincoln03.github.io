@@ -1,0 +1,90 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    font-size: 1.25vw;}
+
+#logo {
+    margin: 0px;
+    padding: 10px;
+    color: rgba(253, 201, 186, 0.9);
+    font-family: "Fredoka One", sans-serif;
+    text-align: center;
+    justify-content: center;}
+
+ul {
+    margin: 0px;}
+
+body > header{
+    background-color: rgba(101, 147, 245, 0.5);
+    color: rgba(253, 201, 186, 0.9);
+    padding: 20px;
+    /* display: flex; */
+    height: 25%;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+#nav-ul {
+    display: flex;
+    justify-content: space-evenly;}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 12px;}
+
+body > header > nav > ul{
+    list-style: none;
+    text-decoration: none;} 
+
+/* body > header > nav > ul > li > a{
+    color: white;} */
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 0.5px solid white}
+
+body > main {
+    background-color: rgba(253, 201, 186, 0.9);
+    padding: 20px;}
+
+#main-content {
+    display: flex;
+    justify-content: flex-start;}
+
+#main-content > div {
+    width: 70%;}
+/* this makes the content inside the div take up 70% of the screen starting from the left*/
+
+body > main article {
+    width: 80%;
+    margin: auto;}
+/* by getting rid of the > between main and article, it now means that instead of teh article having to be a direct descendant of the main (as we now have div tags in between them) this command will apply to all the articles in the main */
+
+form {
+    text-align: center;}
+
+h2 {
+    text-align: center;}
+
+img {
+    border-radius: 100%;}
+
+body > footer {
+    background-color: rgba(101, 147, 245, 0.5);
+    padding: 20px;
+    display: flex;}
+
+#footer-ul {
+    display: flex;
+    list-style: none;}
+    /* (makes there no bullet points) */
+
+#footer-ul > div > li {
+    margin-left: 50px;}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;}
+/* need to change colour + text decoration of the links specifically as otherwise it get overridden by the general <a> - so must override the <a> specifically */

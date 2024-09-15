@@ -1,0 +1,222 @@
+body {
+    font-family: 'Cormorant Garamond','Courier New', Courier, monospace;
+    margin: 0px;
+    font-size: 1.25vw;}
+
+
+#logo {
+    margin: 0px;
+    padding: 10px;
+    color: rgb(22, 93, 246);
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    justify-content: center;}
+
+#corset-tops-title {
+    color: rgb(138, 173, 247);
+    text-align: center;
+    font-size: 1.7vw;
+    padding-left: 65px;
+}
+
+ul {
+    margin: 0px;}
+
+body > header{
+    background-color: rgb(138, 173, 247);
+    color: rgba(255, 188, 223, 0.885);
+    padding: 20px;
+    /* display: flex; */
+    height: 25%;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+#nav-ul {
+    display: flex;
+    justify-content: space-evenly;}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 12px;}
+
+body > header > nav > ul{
+    list-style: none;
+    text-decoration: none;} 
+
+/* body > header > nav > ul > li > a{
+    color: white;} */
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 0.5px solid white}
+
+body > main {
+    /* background-color: rgba(224, 231, 247, 0.5); */
+    background-color: #ffffff;
+    padding: 20px;}
+
+#main-content {
+    display: flex;
+    justify-content: flex-start;}
+
+#main-content > div {
+    width: 70%;}
+/* this makes the content inside the div take up 70% of the screen starting from the left*/
+
+body > main article {
+    width: 80%;
+    margin: auto;}
+/* by getting rid of the > between main and article, it now means that instead of teh article having to be a direct descendant of the main (as we now have div tags in between them) this command will apply to all the articles in the main */
+
+#filter {
+    color: rgb(22, 93, 246);
+    font-size: 1.4vw;
+}
+#filter > nav > ul > li {
+    list-style: none;
+    margin: 0px;
+}
+
+#filter > nav > ul > li > a {
+    color: rgb(22, 93, 246);
+    text-decoration: none;
+    margin: 0px;
+}
+
+form {
+    text-align: center;}
+
+h2 {
+    text-align: center;}
+
+/* img {
+    border-radius: 100%;} */
+
+#grid a {
+    font-size: 1.5vw;
+    font-family: "EB Garamond", sans-serif;
+}
+
+body > footer {
+    background-color: rgba(101, 147, 245, 0.5);
+    padding: 20px;
+    display: flex;
+    align-items: center;}
+
+#footer-ul {
+    display: flex;
+    list-style: none;}
+    /* (makes there no bullet points) */
+
+#footer-ul > div > li {
+    margin-left: 50px;}
+
+#footer-ul > div > li > a {
+    color: rgb(22, 93, 246);
+    text-decoration: none;}
+/* need to change colour + text decoration of the links specifically as otherwise it get overridden by the general <a> - so must override the <a> specifically */
+
+#column-one {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* padding: 125px; */
+    /* background-color: rgba(253, 201, 186, 0.9); */
+    color: rgb(138, 173, 247);
+    text-align: center;
+    grid-area: one;}
+    
+#column-two {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* padding: 125px; */
+    color: rgb(138, 173, 247);
+    /* background-color: rgba(101, 147, 245, 0.5); */
+    text-align: center;
+    grid-area: two;}
+
+#form {
+    color: rgb(22, 93, 246);
+}
+
+/* #two > nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;} */
+
+/* #three {
+    padding: 32px;
+    grid-area: three;
+}
+
+#four {
+    padding: 32px;
+    background-color: rgba(253, 201, 186, 0.9);
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    grid-area: four;
+} */
+/* 
+#grid {
+    display: flex;
+    justify-content: center;
+} */
+
+#grid-container {
+    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "two";
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: 0;}
+
+#one {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;}
+
+#two {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;}
+
+#three {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;}
+#four {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 7px;}
+
+#grid-container li {
+    list-style: none;
+    font-size: 1.7vw;
+}
+
+#grid-container a {
+    color: rgb(138, 173, 247);
+    text-decoration: none;
+}
+
+footer {
+    color: rgb(22, 93, 246);
+    font-size: 1.25vw;
+}
